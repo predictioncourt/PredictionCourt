@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>PredictionCourt | Home</title>
+  <meta name="description" content="PredictionCourt – Predictions for MMA, Football and Basketball." />
+  <meta name="keywords" content="prediction, football prediction, basketball prediction, mma prediction" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body class="light">
+
+<header class="topbar">
+  <div class="logo">PredictionCourt</div>
+  <div class="theme-buttons">
+    <button onclick="setTheme('light')">Light</button>
+    <button onclick="setTheme('gray')">Gray</button>
+    <button onclick="setTheme('dark')">Dark</button>
+  </div>
+</header>
+
+<nav class="tabs">
+  <button class="tab active" data-tab="football" onclick="showTab('football')">Football</button>
+  <button class="tab" data-tab="basketball" onclick="showTab('basketball')">Basketball</button>
+  <button class="tab" data-tab="mma" onclick="showTab('mma')">MMA</button>
+</nav>
+
+<main class="container">
+
+  <!-- FOOTBALL (EMPTY ON PURPOSE) -->
+  <section id="football" class="tab-content">
+    <p class="empty-note">No football predictions yet.</p>
+  </section>
+
+  <!-- BASKETBALL (EMPTY ON PURPOSE) -->
+  <section id="basketball" class="tab-content">
+    <p class="empty-note">No basketball predictions yet.</p>
+  </section>
+
+  <!-- MMA (WE FILL THIS VIA JS) -->
+  <section id="mma" class="tab-content active">
+    <div id="mma-list" class="match-grid">
+      <!-- JS will inject match cards here -->
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">© PredictionCourt</footer>
+<p style="text-align:center; margin:10px 0; font-size:14px;">
+  Contact: <a href="mailto:mehmetbabapro715@gmail.com">mehmetbabapro715@gmail.com</a>
+</p>
+<script src="script.js"></script>
+</body>
+</html>

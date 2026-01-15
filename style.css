@@ -1,0 +1,152 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+}
+
+/* THEMES */
+body.light { background: #f5f5f5; color: #111; }
+body.dark { background: #0e0e0e; color: #eee; }
+body.gray { background: #2f2f2f; color: #eee; }
+
+/* HEADER */
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  border-bottom: 1px solid #ccc;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  color: inherit;
+}
+
+.tabs {
+  display: flex;
+  flex-wrap: wrap;              /* 🔥 OLAY BU */
+  justify-content: center;
+  gap: 12px;
+  padding: 16px;
+}
+
+
+.tab {
+  padding: 20px 12px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+
+/* MATCH CARDS */
+.match-card {
+  display: block;
+  padding: 20px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  background: rgba(0,0,0,0.05);
+  text-decoration: none;
+  color: inherit;
+}
+
+.match-card:hover {
+  opacity: 0.8;
+}
+
+/* TAB CONTENT */
+.tab-content {
+  display: none;
+}
+.tab-content.active {
+  display: block;
+}
+
+/* MATCH PAGE */
+.match-box {
+  margin-top: 30px;
+  padding: 20px;
+  border-radius: 8px;
+  background: rgba(0,0,0,0.05);
+}
+
+/* FOOTER */
+.footer {
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+  opacity: 0.7;
+}
+
+
+
+
+  .match-card {
+    width: 100%;
+  }
+
+.tab {
+  flex: 1 1 140px;              /* mobilde 2 + 1 dizilir */
+  max-width: 180px;
+  text-align: center;
+  border-radius: 6px;
+}
+.tab {
+  flex: 1 1 140px;              /* mobilde 2 + 1 dizilir */
+  max-width: 180px;
+  text-align: center;
+  border-radius: 6px;
+}
+@media (max-width: 420px) {
+  .tab {
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+}
+.back-button {
+  display: inline-block;
+  margin-bottom: 16px;
+  padding: 8px 14px;
+  background: red;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: bold;
+  transition: background 0.2s;
+
+  position: relative;   /* container içinde düzgün yerleşim */
+  z-index: 1000;        /* üstte görünmesini sağlar */
+}
+
+.back-button:hover {
+  background: darkred;
+}
+
+
